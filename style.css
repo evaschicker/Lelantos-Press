@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective-origin: 0%;
+    perspective: 8px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .background-image {
+    background-image: url('images/img__1.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0px);
+    width: 100%;
+  }
+  
+  .foreground {
+    margin: 30% 0 0 10%;
+    transform-origin: 0%;
+    transform: translateZ(3px) scale(0.625);
+  }
+  
+  .foreground__text {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 100px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.178);
+  }
+
+.wrap {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100vw;
+}
