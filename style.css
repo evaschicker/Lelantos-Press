@@ -1,50 +1,132 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-  .container {
-    display: flex;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    perspective-origin: 0%;
-    perspective: 8px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .background-image {
-    background-image: url('images/img__1.jpg');
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateZ(0px);
-    width: 100%;
-  }
-  
-  .foreground {
-    margin: 30% 0 0 10%;
-    transform-origin: 0%;
-    transform: translateZ(3px) scale(0.625);
-  }
-  
-  .foreground__text {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 100px;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.178);
-  }
-
 .wrap {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
+    max-width: 1800px;
     padding: 0 20px;
-    width: 100vw;
+}
+
+header {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 40px;
+}
+
+ul {
+    display: flex;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 0 50px 0 0px;
+}
+
+
+ul li:nth-child(2) {
+    margin-left: auto;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.nav__anchor {
+    color: black;
+    font-size: 0.9rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+.image-section {
+    background-color: black;
+}
+
+.image-section__image-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-section__image {
+    align-items: flex-start;
+    background: no-repeat 50% / cover;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content:flex-start;
+    padding: 40px 0 0 30px;
+}
+
+.image-section__text {
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
+    opacity: 0.8;
+    padding: 6px 40px 6px 10px;
+}
+
+.image-section__author {
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    margin-top: 20px;
+    margin-left: 5rem;
+    opacity: 0.8;
+    padding: 4px 20px 4px 10px;
+}
+
+.text-group__container {
+    padding: 50px;
+}
+
+button {
+    background: none;
+    border: solid 1px black;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.text-group {
+    padding: 20px 0;
+}
+
+.text-group .wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    padding: 20px;
+}
+
+footer .wrap {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
 }
