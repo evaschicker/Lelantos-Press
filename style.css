@@ -1,6 +1,6 @@
 :root {
-    --darkerblue: rgb(206, 219, 253);
-    --lightblue: rgb(233, 238, 252);
+    --darkerblue: rgb(211, 214, 229);
+    --lightblue: rgb(231, 234, 253);
 }
 
 * {
@@ -194,15 +194,13 @@ button {
 /* Text Group Two -- Black */
 
 .text-group__two {
-    background-color: rgba(0, 0, 0, 0.65);
-    color: white;
+    background-color: var(--darkerblue);
     line-height: 2rem;
 }
 
 .button-two {
     background-color: none;
-    border: 2px solid var(--darkerblue);
-    color: var(--darkerblue);
+    border: 2px solid black;
     font-weight: 500;
     font-size: 0.9rem;
     height: 100%;
@@ -210,25 +208,34 @@ button {
     padding: 10px 24px;
     position: relative;
     width: auto;
-    transition: box-shadow 300ms cubic-bezier(0.67, -0.01, 0.32, 0.96) 50ms;
+    transition: background-color 300ms ease-in-out;
 }
 
-.button-one::two {
-    background-color: var(--darkerblue);
-    content: '';
-    font-weight: 800;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    transform: scaleX(0);
-    transform-origin: 0 0;
-    transition: transform 200ms cubic-bezier(0.67, -0.01, 0.32, 0.96);
-    z-index: -1;
+.button-two:hover {
+    animation: borderGrow 1s linear forwards;
+    background-color: black;
 }
 
 
+/* Animations */
+@keyframes borderGrow {
+    
+    0% {
+        border: 2px solid black;
+        box-shadow: 0 0 0 0 black;
+    }
+
+    25% {
+        color: var(--darkerblue);
+    }
+
+    100% {
+        border: 2px solid black;
+        box-shadow: 0 0 2px 2px black;
+        color: var(--darkerblue);
+    }
+    
+}
 
 
 /* Footer */
