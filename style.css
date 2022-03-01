@@ -96,8 +96,8 @@ br {
     display: flex;
     flex-direction: column;
     height: 60vh;
-    justify-content:flex-start;
-    padding: 60px 0 0 80px;
+    justify-content: flex-start;
+    padding: 80px 0 0 120px;
     transform-origin: 300px 400px;
     transition: transform 3s ease-in-out;
 }
@@ -266,7 +266,7 @@ footer .wrap {
 }
 
 .image-section__image:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .image-section__image:hover .image-section__head {
